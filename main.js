@@ -7,7 +7,7 @@ speak_data = "";
 to_number = "";
 
 function preload() {
-imageLoaded("apple.png");
+  loadImage("apple.png");
 
 }
 
@@ -27,7 +27,7 @@ recognition.onresult = function(event) {
 
  console.log(event); 
 
- content = event.results[0][0].transcript;
+  var content = event.results[0][0].transcript;
 
     document.getElementById("status").innerHTML = "The speech has been recognized: " + content; 
     to_number = Number(content);
