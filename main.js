@@ -7,7 +7,7 @@ speak_data = "";
 to_number = "";
 
 function preload() {
-  apple = imageLoaded("apple.png");
+ imageLoaded("apple.png");
 
 }
 
