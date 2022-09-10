@@ -46,7 +46,7 @@ function setup() {
   screen_width = window.innerWidth;
   screen_height = window.innerHeight;
   canvas = createCanvas(screen_width, screen_height-150);
-  canvas.position(0-150);
+  canvas.position(0, 150);
 }
 
 function draw() {
@@ -56,6 +56,7 @@ function draw() {
     speak_data = to_number;
     speak();
     draw_apple = "";
+    console.log("It works");
   }
   for(var i = 1; i <= to_number; i++) {
     x = Math.floor(Math.random() * 700);
