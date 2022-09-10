@@ -56,7 +56,6 @@ function draw() {
     speak_data = to_number;
     speak();
     draw_apple = "";
-    console.log("It works");
   }
   for(var i = 1; i <= to_number; i++) {
     x = Math.floor(Math.random() * 700);
